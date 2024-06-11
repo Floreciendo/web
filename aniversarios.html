@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ANIVERSARIOS</title>
+        <style>
+           
+
+           body 
+           {font-family: Arial, Helvetica, sans-serif;
+    background-image: url(ff.png); /*ruta de mi imagen*/
+    background-size: cover; /* para cubrir el fondo*/
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(97, 69, 8);
+    font-size: larger;
+}
+
+.u {
+    color:#07335f;
+    text-align: justify;
+}
+.image-container {
+                text-align: center;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.7); /*color de fondo para hacer el texto legible*/
+                margin: 20px;
+                display: inline-block;
+                cursor: pointer;
+            }
+            
+            .image-container img {
+                width: 335px;
+                height: 335px;
+            }
+            
+            .image-container h3 {
+                margin: 10px 0;
+            }
+            
+            .image-container h1 {
+                margin: 5px 0;
+            }
+            
+            .image-container ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            footer {
+    background-color: #fdfcfc;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+}
+footer a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+}
+footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+        <body> 
+        
+            <h1>¿RAMOS para matrimonios, Aniversarios de amistad, etc? <br>
+                Celebra tu historia con flores</h1>
+            <p>¿No sabes que ramo regalarle? Estos son los mejores ramos que siempre triunfan en los aniversarios.
+                 ¡Celebrando contigo, cada aniversario merece un ramo tan especial como tu amor!</p>
+
+
+           
+                   <h2><span style="color:#07335f">¿Sin palabras? En Floristería Gaby: dejamos que las Flores hablen por ti<a href="floristeriagaby.html">Volver a la pagina principal</a></h2>
+    
+                        
+    
+                       
+
+                        <table width="50%" align="center">
+                            <tr>
+                
+                                <td>
+                                    <div class="image-container" onclick="openDetails('ImagenesGaby/perso3.png', 'Aniversario', 'Precio: $50')">
+                                    <img src="ImagenesGaby/ani.jpg"  alt="---"  width="335" height="335">
+                                    <h3>Aniversario</h3>
+                                   <h1>Precio: $50</h1> 
+                                    <p>Caracter&iacute;sticas:</p>
+                                    
+                                    </div>
+                             </td>
+                             <td>
+                                <div class="image-container" onclick="openDetails('ImagenesGaby/perso3.png', 'Aniversario', 'Precio: $40')">
+                                <img src="ImagenesGaby/ani1.jpg"  alt="---"  width="335" height="335">
+                                <h3>Aniversario</h3>
+                               <h1>Precio: $40</h1> 
+                                <p>Caracter&iacute;sticas:</p>
+                                <ul class="u">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                         </td>
+                         <td>
+                            <div class="image-container" onclick="openDetails('ImagenesGaby/perso3.png', 'Aniversario', 'Precio: $45')">
+                            <img src="ImagenesGaby/ani2.jpg"  alt="---"  width="335" height="335">
+                            <h3>Aniversario</h3>
+                           <h1>Precio: $45</h1> 
+                           
+                            </div>
+                     </td>
+                            </tr>
+                        </table>
+        <script>
+            function openDetails(imageSrc, title, price) {
+                // Redirige a la nueva página con la información de la imagen seleccionada
+                window.location.href = `details.html?image=${encodeURIComponent(imageSrc)}&title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}`;
+                alert('Reserva realizada')
+            }
+                        </script>
+                        <footer>
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=100078380149953" target="_blank"><img src="ImagenesGaby/facebook.png" alt="Facebook"></a></li>
+                                <li><a href="ImagenesGaby/w.jpg" target="_blank"><img src="ImagenesGaby/w.jpg" alt="Twitter"></a></li>
+                                <li><a href="https://www.instagram.com/gabuu_______?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="ImagenesGaby/instagram.jpg" alt="Instagram"></a></li>
+                            </ul>
+                            <p>&copy; 2024 Floreciendo. Todos los derechos reservados.</p>
+                        </footer>
+        </body>
+</html>

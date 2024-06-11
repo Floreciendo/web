@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SANTOS DIFUNTOS</title>
+        <style>
+         
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(97, 69, 8);
+    font-size: larger;
+}
+
+.cara {
+    text-align: justify;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: url(ff.png); /*ruta de mi imagen*/
+    background-size: cover; /* para cubrir el fondo*/
+}
+
+image {
+width: 80%; /*ancho deseado*/
+margin: 0 auto; /* centrar la imagen*/
+padding: 20px; /**/
+background-color: rgba(255, 255, 255, 0.7); /*color de fondo para hacer el texto legible*/
+}
+
+.image-container {
+                text-align: center;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.7); /*color de fondo para hacer el texto legible*/
+                margin: 20px;
+                display: inline-block;
+                cursor: pointer;
+            }
+            
+            .image-container img {
+                width: 335px;
+                height: 335px;
+            }
+            
+            .image-container h3 {
+                margin: 10px 0;
+            }
+            
+            .image-container h1 {
+                margin: 5px 0;
+            }
+            
+            .image-container ul {
+                list-style-type: none;
+                padding: 0;
+            }
+h1 {
+    text-align: center;
+    color: rgb(214, 104, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: xx-large;
+}
+footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+}
+footer a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+}
+footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    text-align: center;
+    font-size: 100%;
+}
+        </style>
+    </head>
+        <body> 
+        
+        <h1>EN MEMORIA DE QUIENES SIEMPRE VIVIRÁN EN NUESTROS CORAZONES<br>
+            ¡Recuerdos vivos!</h1>
+        <p><br>
+            
+             ¡Flores para honrar la vida y legado de los que se han ido!</p>
+
+
+             <h2><span style="color:#07335f">¿Sin palabras? En Floristería Gaby: dejamos que las Flores hablen por ti<a href="floristeriagaby.html">Volver a la pagina principal</a></h2>
+            
+                   
+                            <div class="image-container" onclick="openDetails('ImagenesGaby/san3.jpg', 'En Memoria', 'Precio: $55', )">
+                            <img src="ImagenesGaby/san3.jpg"alt="---"  width="335" height="335">
+                            <h3>En Memoria</h3>
+                            <h1>Precio: $55</h1> 
+                            
+                    </div>
+                    <div class="image-container" onclick="openDetails('ImagenesGaby/san4.jpg', 'En Memoria', 'Precio: $56')">
+                            <img src="ImagenesGaby/san4.jpg"alt="---"  width="335" height="335">
+                            <h3>En Memoria</h3>
+                           <h1>Precio: $56</h1> 
+                            
+                    </div>
+                    <div class="image-container" onclick="openDetails('ImagenesGaby/san2.jpg', 'En Memoria', 'Precio: $60')">
+                            <img src="ImagenesGaby/san2.jpg"alt="---"  width="335" height="335">
+                            <h3>En Memoria</h3>
+                           <h1>Precio: $60</h1> 
+                           
+                    </div>
+                    <div class="image-container" onclick="openDetails('ImagenesGaby/san1.jpg', 'En Memoria', 'Precio: $50')">
+                            <img src="ImagenesGaby/san1.jpg"alt="---"  width="335" height="335">
+                            <h3>En Memoria</h3>
+                           <h1>Precio: $50</h1> 
+                            
+                    </div>
+
+                    <div class="image-container" onclick="openDetails('ImagenesGaby/san.jpg', 'En Memoria', 'Precio: $54')">
+                            <img src="ImagenesGaby/san.jpg"alt="---"  width="335" height="335">
+                            <h3>En Memoria</h3>
+                           <h1>Precio: $54</h1> 
+                            
+                    </div>
+                    <div class="image-container" onclick="openDetails('ImagenesGaby/san5.jpg', 'En Memoria', 'Precio: $60')">
+                            <img src="ImagenesGaby/san5.jpg" alt="---"  width="335" height="335">
+                            <h3>En Memoria</h3>
+                           <h1>Precio: $60</h1> 
+                            
+                    </div>
+                    <script>
+                        function openDetails(imageSrc, title, price) {
+                            // Redirige a la nueva página con la información de la imagen seleccionada
+                            window.location.href = `details.html?image=${encodeURIComponent(imageSrc)}&title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}`;
+                        }
+                    </script>
+                 <footer>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100078380149953" target="_blank"><img src="ImagenesGaby/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="ImagenesGaby/w.jpg" target="_blank"><img src="ImagenesGaby/w.jpg" alt="Twitter"></a></li>
+                        <li><a href="https://www.instagram.com/gabuu_______?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="ImagenesGaby/instagram.jpg" alt="Instagram"></a></li>
+                    </ul>
+                    <p>&copy; 2024 Floreciendo. Todos los derechos reservados.</p>
+                </footer>     
+        </body>
+
+</html>

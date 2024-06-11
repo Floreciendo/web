@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SAN VALENT&Iacute;N</title>
+        <style>
+         
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(97, 69, 8);
+    font-size: larger;
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: url(ff.png); /*ruta de mi imagen*/
+    background-size: cover; /* para cubrir el fondo*/
+}
+
+image {
+width: 80%; /*ancho deseado*/
+margin: 0 auto; /* centrar la imagen*/
+padding: 20px; /**/
+background-color: rgba(255, 255, 255, 0.7); /*color de fondo para hacer el texto legible*/
+}
+.u {
+    color:#07335f;
+    text-align: justify;
+}
+    
+
+h1 {
+    text-align: center;
+    color: rgb(214, 104, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: xx-large;
+}
+
+p {
+    text-align: center;
+    font-size: 100%;
+}
+
+.u {
+    color:#07335f;
+    text-align: justify;
+}
+.image-container {
+                text-align: center;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.7); /*color de fondo para hacer el texto legible*/
+                margin: 20px;
+                display: inline-block;
+                cursor: pointer;
+            }
+            
+            .image-container img {
+                width: 335px;
+                height: 335px;
+            }
+            
+            .image-container h3 {
+                margin: 10px 0;
+            }
+            
+            .image-container h1 {
+                margin: 5px 0;
+            }
+            
+            .image-container ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+        </style>
+        <body> 
+            
+<h1>LAS FLORES SON EL SUSURRO DEL AMOR VERDADERO<br>
+</h1>
+<p><br>
+
+    &iexcl;Sorprende a esa persona especial!</p>
+
+
+
+ <h2><span style="color:#07335f">&iquest;Sin palabras? En Florister&iacute;a Gaby: dejamos que las Flores hablen por ti
+  <br> &nbsp; &nbsp; &nbsp;   <a href="floristeriagaby.html">Volver a la pagina principal</a></h2>
+
+        
+  <div class="image-container" onclick="openDetails('ImagenesGaby/amor.jpg', 'Love', 'Precio: $30')">
+                            <img src="ImagenesGaby/amor.jpg" alt="---"  width="335" height="335">
+                            <h3>Love</h3>
+                           <h1>Precio: $30</h1> 
+                            <p>Caracteristicas</p>
+                            <ul class="u">
+                            <li>Rosas</li>
+                            <li>Peluche</li>
+                            <li></li>
+                        </ul>
+  </div>
+  <div class="image-container" onclick="openDetails('ImagenesGaby/amor2.jpg', 'Love', 'Precio: $30')">
+                                <img src="ImagenesGaby/amor2.jpg" alt="---"  width="335" height="335">
+                                <h3>Love</h3>
+                               <h1>Precio: $45</h1> 
+                                <p>Caracteristicas</p>
+                                <ul class="u">
+                                <li>Rosas</li>
+                                <li>Peluche</li>
+                                <li>Baby</li>
+                            </ul> 
+  </div>
+  <div class="image-container" onclick="openDetails('ImagenesGaby/amor3.jpg', 'Love', 'Precio: $30')">
+                                    <img src="ImagenesGaby/amor3.jpg" alt="---"  width="335" height="335">
+                                    <h3>Love</h3>
+                                   <h1>Precio: $35</h1> 
+                                    <p>Caracteristicas</p>
+                                    <ul class="u">
+                                    <li>Rosas</li>
+                                    <li>Peluche</li>
+                                    <li></li>
+                                </ul> 
+  </div>
+  <div class="image-container" onclick="openDetails('ImagenesGaby/amor5.jpg', 'Love', 'Precio: $60')">
+                                        <img src="ImagenesGaby/amor5.jpg" alt="---"  width="335" height="335">
+                                        <h3>Love</h3>
+                                       <h1>Precio: $60</h1> 
+                                        <p>Caracteristicas</p>
+                                        <ul class="u">
+                                        <li>Rosas</li>
+                                        <li>Peluche</li>
+                                        <li></li>
+                                    </ul>
+  </div>
+                                    <script>
+                                        function openDetails(imageSrc, title, price) {
+                                            // Redirige a la nueva página con la información de la imagen seleccionada
+                                            window.location.href = `details.html?image=${encodeURIComponent(imageSrc)}&title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}`;
+                                        }
+                                    </script>
+                                    
+<a href="floristeriagaby.html">Volver a la pagina principal</a>
+
+        </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RAMOS DIA DE LA MADRE</title>
+        <style>
+            body {
+                background-image: url(); /* Ruta de la imagen de fondo */
+                text-align: center;
+            }
+            h1 {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            p {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(97, 69, 8);
+                font-size: larger;
+            }
+            table {
+                text-align: center;
+                margin: 0 auto; /* Centrar la tabla */
+            }
+            td {
+                border: 3px solid #ddd;
+                padding: 10px;
+            }
+            h1 {
+                text-align: center;
+                color: rgb(214, 104, 40);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: xx-large;
+            }
+            h3 {
+                color: #07335f;
+            }
+            .u {
+                color: black;
+                text-align: justify;
+                list-style: none;
+                padding: 0;
+            }
+            .u li {
+                margin-bottom: 5px;
+            }
+            a {
+                text-decoration: none;
+                color: #07335f;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+        <script>
+            function openDetails(imageSrc, title, price) {
+                // Redirige a la nueva página con la información de la imagen seleccionada
+                window.location.href = `details.html?image=${encodeURIComponent(imageSrc)}&title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}`;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>LOS MEJORES RAMOS QUE TE ENCANTARÁN<br>
+            Celebra a MAMÁ con flores que expresan todo tu amor</h1>
+        <p>¿No sabes que regalarle a esa mujer especial? Estos son algunos de nuestros productos 
+            ¡no le saques canas verdes, mejor sacale una sonrisa con nuestros ramos!</p>
+
+        <h2><span style="color:#07335f">¿Sin palabras? En Floristería Gaby: dejamos que las Flores hablen por ti.</span></h2>
+        
+        <table width="80%">
+            <tr>
+                <td onclick="openDetails('ImagenesGaby/mami.jpg', 'Baby', '$55')">
+                    <img src="ImagenesGaby/mami.jpg" width="335" height="335">
+                    <h3>Mother</h3>
+                    <h1>Precio: $55</h1>
+                    
+                </td>
+                <td onclick="openDetails('ImagenesGaby/1.jpg', 'Mom', '$55')">
+                    <img src="ImagenesGaby/1.jpg" width="335" height="335">
+                    <h3>Mom</h3>
+                    <h1>Precio: $55</h1>
+                   
+                </td>
+                <td onclick="openDetails('ImagenesGaby/3.jpg', 'Mom', '$55')">
+                    <img src="ImagenesGaby/3.jpg" width="335" height="335">
+                    <h3>Mom</h3>
+                    <h1>Precio: $55</h1>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td onclick="openDetails('ImagenesGaby/baby.jpg', 'Mom', '$50')">
+                    <img src="ImagenesGaby/baby.jpg" width="335" height="335">
+                    <h3>Mom</h3>
+                    <h1>Precio: $50</h1>
+                    <p>Características</p>
+                    <ul class="u">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>Papel Coreano</li>
+                    </ul>
+                </td>
+                <td onclick="openDetails('ImagenesGaby/6.jpg', 'Mom', '$50')">
+                    <img src="ImagenesGaby/6.jpg" width="335" height="335">
+                    <h3>Mom</h3>
+                    <h1>Precio: $50</h1>
+                    <p>Características</p>
+                    <ul class="u">
+                        <li>Rosas</li>
+                        <li>Papel Coreano</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h2><a href="floristeriagaby.html">Volver a la pagina principal</a></h2>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

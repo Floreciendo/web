@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRADUACIONES</title>
+        <style>
+            h1 {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            table {
+                text-align: center;
+            }
+
+            td {
+                border: 1px;
+                color: #ddd;
+                background-color: #eed4ed;
+                text-decoration-color: #fff;
+            }
+
+            tr {
+                background-color: #c7e2e0;
+            }
+
+            p {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(97, 69, 8);
+                font-size: larger;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: url(ff.png); /*ruta de mi imagen*/
+                background-size: cover; /* para cubrir el fondo*/
+                list-style-position: inherit;
+            }
+
+            image {
+                width: 80%; /*ancho deseado*/
+                margin: 0 auto; /* centrar la imagen*/
+                padding: 20px; /**/
+                background-color: rgba(255, 255, 255, 0.7); /*color de fondo para hacer el texto legible*/
+            }
+
+            h1 {
+                text-align: center;
+                color: rgb(214, 104, 40);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: xx-large;
+            }
+
+            p {
+                text-align: center;
+                font-size: 100%;
+            }
+
+            .u {
+                color: black;
+                text-align: justify;
+            }
+
+            footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+}
+footer a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+}
+footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+        </style>
+        <script>
+            function openDetails(imageSrc, title, price) {
+                // Redirige a la nueva página con la información de la imagen seleccionada
+                window.location.href = `details.html?image=${encodeURIComponent(imageSrc)}&title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}`;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>¿RAMOS para graduaciones?<br>
+            ¡Ilumina ese camino hacia el futuro con nuestras flores!</h1>
+        <p>¡Que este ramo te recuerde siempre lo lejos que has llegado y todo lo que a&uacute;n puedes lograr!</p>
+
+        <h2><span style="color:#07335f">¿Sin palabras? En Floristería Gaby: dejamos que las Flores hablen por ti</span> <a href="floristeriagaby.html">Volver a la pagina principal</a></h2>
+
+        <table width="50%" align="center">
+            <tr>
+                
+                <td onclick="openDetails('ImagenesGaby/----(JPG).jpg', 'Baby', '$35')">
+                    <img src="ImagenesGaby/----(JPG).jpg" alt="---" width="335" height="335">
+                    <h3 align="center">Baby</h3>
+                    <h1>Precio: $35</h1>
+                   
+                 
+                </td>
+                <td onclick="openDetails('ImagenesGaby/------.jpg', 'Baby', '$40')">
+                    <img src="ImagenesGaby/------.jpg" alt="1" width="325" height="335">
+                    <h3 align="center">Baby</h3>
+                    <h1>Precio: $40</h1>
+                
+                </td>
+                <td onclick="openDetails('ImagenesGaby/-----.jpg', 'Baby', '$33')">
+                    <img src="ImagenesGaby/-----.jpg" alt="santo" width="330" height="335">
+                    <h3 align="center">Baby</h3>
+                    <h1>Precio: $33</h1>
+                   
+                </td>
+            </tr>
+            <tr>
+                <td onclick="openDetails('ImagenesGaby/---.jpg', 'Baby', '$36')">
+                    <img src="ImagenesGaby/---.jpg" alt="santo" width="330" height="335">
+                    <h3 align="center">Baby</h3>
+                    <h1>Precio: $36</h1>
+                    
+                </td>
+                <td onclick="openDetails('ImagenesGaby/----------.jpg', 'Baby', '$39')">
+                    <img src="ImagenesGaby/----------.jpg" alt="santo" width="330" height="335">
+                    <h3 align="center">Baby</h3>
+                    <h1>Precio: $39</h1>
+                   
+                </td>
+                <td onclick="openDetails('ImagenesGaby/----------.jpg', 'Baby', '$23')">
+                    <img src="ImagenesGaby/----------.jpg" alt="santo" width="330" height="335">
+                    <h3 align="center">Baby</h3>
+                    <h1>Precio: $23</h1>
+                  
+                </td>
+            </tr>
+        </table>
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100078380149953" target="_blank"><img src="ImagenesGaby/facebook.png" alt="Facebook"></a></li>
+                <li><a href="ImagenesGaby/w.jpg" target="_blank"><img src="ImagenesGaby/w.jpg" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/gabuu_______?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="ImagenesGaby/instagram.jpg" alt="Instagram"></a></li>
+            </ul>
+            <p>&copy; 2024 Floreciendo. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
