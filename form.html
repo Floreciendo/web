@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0 1rem;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        footer a {
+            display: block;
+            width: 32px;
+            height: 32px;
+            text-decoration: none;
+        }
+
+        footer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #hotel {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, input, button, select {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #resumen {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Reserva -->
+        <section id="hotel">
+            <h2>Reserva tu Habitación</h2>
+            <form id="reserva-form">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" required>
+                </div>
+                <div class="mb-3">
+                    <label for="residencia" class="form-label">Residencia</label>
+                    <input type="text" class="form-control" id="residencia" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" required>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha-llegada" class="form-label">Fecha de Llegada</label>
+                    <input type="date" class="form-control" id="fecha-llegada" required>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha-salida" class="form-label">Fecha de Salida</label>
+                    <input type="date" class="form-control" id="fecha-salida" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tipo-habitacion" class="form-label">Tipo de Habitación</label>
+                    <select class="form-control" id="tipo-habitacion" required>
+                        <option value="Estándar">Estándar</option>
+                        <option value="De lujo">De lujo</option>
+                        <option value="Suite">Suite</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="numero-habitaciones" class="form-label">Número de Habitaciones</label>
+                    <input type="number" class="form-control" id="numero-habitaciones" required>
+                </div>
+                <div class="mb-3">
+                    <label for="numero-personas" class="form-label">Número de Personas</label>
+                    <input type="number" class="form-control" id="numero-personas" required>
+                </div>
+                <div class="mb-3">
+                    <label for="servicios-adicionales" class="form-label">Servicios Adicionales</label>
+                    <select multiple class="form-control" id="servicios-adicionales">
+                        <option value="Desayuno incluido">Desayuno incluido</option>
+                        <option value="Traslado al aeropuerto">Traslado al aeropuerto</option>
+                        <option value="Acceso al gimnasio">Acceso al gimnasio</option>
+                        <option value="Acceso al spa">Acceso al spa</option>
+                        <option value="Lavandería">Lavandería</option>
+                        <option value="Alquiler de coches">Alquiler de coches</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Reserva</button>
+            </form>
+        </section>
+    
+        <!-- Sección Resumen -->
+        <section id="resumen">
+            <!-- Aquí se mostrará el resumen de la reserva -->
+        </section>
+    </main>
+    
+    <script>
+        document.getElementById('reserva-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            let nombre = document.getElementById('nombre').value;
+            let email = document.getElementById('email').value;
+            let direccion = document.getElementById('direccion').value;
+            let residencia = document.getElementById('residencia').value;
+            let telefono = document.getElementById('telefono').value;
+            let fechaLlegada = document.getElementById('fecha-llegada').value;
+            let fechaSalida = document.getElementById('fecha-salida').value;
+            let tipoHabitacion = document.getElementById('tipo-habitacion').value;
+            let numeroHabitaciones = document.getElementById('numero-habitaciones').value;
+            let numeroPersonas = document.getElementById('numero-personas').value;
+            let serviciosAdicionales = Array.from(document.getElementById('servicios-adicionales').selectedOptions).map(option => option.value).join(', ');
+    
+            let resumen = `
+                <h3>Resumen de Reserva</h3>
+                <p><strong>Nombre:</strong> ${nombre}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Dirección:</strong> ${direccion}</p>
+                <p><strong>Residencia:</strong> ${residencia}</p>
+                <p><strong>Teléfono:</strong> ${telefono}</p>
+                <p><strong>Fecha de Llegada:</strong> ${fechaLlegada}</p>
+                <p><strong>Fecha de Salida:</strong> ${fechaSalida}</p>
+                <p><strong>Tipo de Habitación:</strong> ${tipoHabitacion}</p>
+                <p><strong>Número de Habitaciones:</strong> ${numeroHabitaciones}</p>
+                <p><strong>Número de Personas:</strong> ${numeroPersonas}</p>
+                <p><strong>Servicios Adicionales:</strong> ${serviciosAdicionales}</p>
+            `;
+    
+            document.getElementById('resumen').innerHTML = resumen;
+        });
+    </script>
+    <footer>
+        <ul>
+            <li><a href="#"><img src="youtube.png" alt="Youtube"></a><p class="icon">YouTube</p></li>
+            <li><a href="#"><img src="facebook.png" alt="Facebook"></a><p class="icon">Facebook</p></li>
+            <li><a href="#"><img src="pinterest.png" alt="Pinterest"></a><p class="icon">Pinterest</p></li>
+            <li><a href="#"><img src="twitter (1).png" alt="Twitter"></a><p class="icon">Twitter</p></li>
+            <li><a href="#"><img src="instagram.png" alt="Instagram"></a><p class="icon">Instagram</p></li>
+        </ul>
+    </footer>
+</body>
+</html>
